@@ -65,5 +65,4 @@ categoryButtons.forEach((btn) => {
 /**** end fetching products by category in Products section ****/
 
 const shoppingBagCloseBtn = document.querySelector(".bag-close-btn");
-// console.log(shoppingBagCloseBtn);
 shoppingBagCloseBtn.addEventListener("click", hideBag);

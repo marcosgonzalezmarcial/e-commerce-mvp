@@ -7,7 +7,7 @@ export const TriangleBorder = () => {
   if (!!badgeRefPos) {
     document.documentElement.style.setProperty(
       "--triangle-border-left",
-      `${Math.round(badgeRefPos - 2.5)}px`
+      `${Math.round(badgeRefPos) - 3}px`
     );
   } else {
     return;

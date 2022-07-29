@@ -224,16 +224,6 @@
       font-weight: var(--fw-500);
     }
   }
-
-  .shopping-bag-checkout-btn {
-    background-color: var(--black);
-    color: var(--white);
-    width: 100%;
-    padding: 0.5rem;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
 .shopping-bag-header {
@@ -248,4 +238,27 @@
 
 .bag-title {
   display: flex;
+}
+
+.shopping-bag-checkout-btn {
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+
+  &:is(:active) {
+    background-color: #80c2bd;
+  }
+  @include responsive(lg) {
+    &:is(:hover) {
+      background-color: lighten($color: black, $amount: 33.33%);
+
+      &:is(:active) {
+        background-color: #80c2bd;
+      }
+    }
+  }
 }
