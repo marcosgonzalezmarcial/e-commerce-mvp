@@ -34,7 +34,7 @@ export const ShoppingBag = () => {
             </div>
           </div>
           <div class="item-description-bottom">
-            <p>eliminar</p>
+            <p class="remove-item-btn">eliminar</p>
           </div>
         </div>
       </div>
